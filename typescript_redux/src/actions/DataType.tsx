@@ -1,6 +1,6 @@
 import { TypeKeys } from './TypeKeys';
 
-export interface AddDataAction {
+export interface DataType {
     type: TypeKeys.ADD_DATA;
-    price: number[];
+    price: number;
 }

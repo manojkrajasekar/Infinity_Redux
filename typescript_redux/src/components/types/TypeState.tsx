@@ -1,3 +1,3 @@
 export default interface TypeState {
-    price: number[];
-};
+    price: number;
+}

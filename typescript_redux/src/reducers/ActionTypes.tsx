@@ -1,4 +1,4 @@
-import { AddDataAction }  from '../actions/AddDataAction';
+import { DataType }  from '../actions/DataType';
 
 export type ActionTypes = 
-    | AddDataAction;
+    | DataType;

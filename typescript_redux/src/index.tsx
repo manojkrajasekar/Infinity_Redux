@@ -1,20 +1,24 @@
 import { createStore } from 'redux';
-import { AddData } from './actions/Data';
+import { AddData } from './actions/AddData';
 import { Reducer } from './reducers/Reducer';
-// import data from './model/CoinsData.json';
+import CoinDetail from './components/types/CoinDetail';
+const data = require('./model/CoinsData.json');
 
 const store = createStore(Reducer);
 
-// const price = [6, 2, 4, 5];
-const priceData = [9, 8, 7, 88];
-priceData.map((price) => {(
-      store.dispatch((AddData(priceData)))
+// const priceData = [9, 8, 7, 88];
+// priceData.map((price) => {(
+//       store.dispatch((AddData(priceData)))
+//     );
+//   }
+// );
+
+data.map((price:CoinDetail) => {(
+      store.dispatch((AddData(price.price_usd)))
     );
   }
 );
 
-// store.dispatch((AddData(price)));
-// console.log(values.price.sort());
 console.log(store.getState());
 
 
