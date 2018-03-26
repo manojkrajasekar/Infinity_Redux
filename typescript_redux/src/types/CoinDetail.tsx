@@ -5,7 +5,7 @@ export default interface CoinDetail {
     'rank': number; 
     'price_usd': number;
     'price_btc': number; 
-    '24h_volume_usd': number;
+    'volume_usd': number;
     'market_cap_usd': number; 
     'available_supply': number; 
     'total_supply': number;

@@ -1,3 +1,3 @@
 export default interface TableProps {
-    price: number[];
+    data: object[];
 }
